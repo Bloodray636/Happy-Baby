@@ -1,0 +1,683 @@
+$light: "Nunito-Light"!important
+$regular: "Nunito-Regular"!important
+$bold: "Nunito-Bold"!important
+$black: "Nunito-Black"!important
+
+$color-title: #7BB92F
+$color-btn: #fff
+$bg-second-btn: #FCEC00 
+$shadow: #00000020
+$color-text: #4D4D4D
+$bg-btn: linear-gradient(180deg, $color-title 40%, $bg-second-btn 150%)
+$shadow-btn: 0px 0px 10px 4px rgba(123, 185, 47, 0.21)
+$shadow-hover: 0px 0px 10px 4px rgba(123, 185, 47, 0.64)
+$bg-card-hover: $color-btn
+
+$bg-nav: $color-btn
+$hov-nav: $color-title
+$pd-nav: 0px 10px!important
+
+$rad-btn: 50px
+$border-btn: 1px solid $color-btn
+$nav-pd-btn: 12px 21px
+$tg-pd-btn: 6px 10px
+$pad-btn: 19px 52px
+$dash-btn: 2px dashed #7BB92F
+$dash-pd: 19px 30px 
+$mt-btn: 35px
+$mb-btn: 30px
+$pd-year-btn: 20px 30px
+
+$mb-slider-title: 32px
+$mb-slider-title-second: 35px
+$mt-title: 50px
+$line-h: 10px
+$mb-title: 30px
+
+$rad-img: 74px 26px 71px 29px
+
+$bg-block: rgba(123, 185, 47, 0.09)
+$mt-block: 35px
+$pd-block: 50px 0px
+
+$r-card: 20px
+$dash: $dash-btn
+$pd-card: 30px
+$pb-card: 30px
+$mb-card: 20px
+$pt-card: 20px
+
+$pd-dropdown: 14px 5px
+
+%btn
+    background: $bg-btn
+    border: none!important
+    color: $color-btn!important
+    padding: $pad-btn
+    border-radius: $rad-btn
+    font-size: 16px!important
+    line-height: $line-h
+    margin-top: $mt-btn
+    transition: .5s ease
+    &:hover
+        transition: .7s ease
+        box-shadow: $shadow-hover
+    @media (max-width: 1199px)
+        &
+            font-size: 14px!important
+            margin-left: 5px
+
+%btn-dash
+    background: transparent
+    border: $dash-btn
+    color: $color-text!important
+    padding: $dash-pd
+    border-radius: $rad-btn
+    font-size: 16px!important
+    line-height: $line-h
+    margin-top: $mt-btn
+    transition: .5s ease
+    &:hover
+        transition: .7s ease
+        box-shadow: $shadow-hover
+        color: $color-title!important
+    @media (max-width: 1199px)
+        &
+            font-size: 14px!important
+            margin-left: 5px
+    
+%title
+    h6
+        color: $color-title
+        margin-bottom: 20px!important
+        line-height: $line-h
+    h2
+        color: $color-text
+        margin-bottom: $mb-slider-title-second
+
+%card
+    border-radius: $r-card
+    border: $dash
+    width: 100%
+    padding: $pd-card
+    margin-bottom: $mb-card
+    .card-header
+        border: none!important
+        background-color: transparent!important
+        padding: 0!important
+
+%cloud-bottom
+    width: 100%
+    height: 50px
+    margin-top: $mt-block
+    img
+        width: 100%
+        height: 100%
+        object-fit: cover!important
+        object-position: top!important
+
+%cloud-top
+    width: 100%
+    height: 50px
+    margin-top: $mt-block
+    img
+        width: 100%
+        height: 100%
+        object-fit: cover!important
+        object-position: bottom
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+@font-face
+    font-family: "Nunito-Bold"
+    src: url(../fonts/Nunito-Bold.ttf)
+
+@font-face
+    font-family: "Nunito-Light"
+    src: url(../fonts/Nunito-Light.ttf)
+
+@font-face
+    font-family: "Nunito-Regular"
+    src: url(../fonts/Nunito-Regular.ttf)
+
+@font-face
+    font-family: "Nunito-Black"
+    src: url(../fonts/Nunito-Black.ttf)
+
+body, html
+    min-height: 100%
+
+body
+    font-family: $regular
+
+a
+    text-decoration: none!important
+    font-size: 14px
+
+@media (max-width: 991px)
+    p
+        font-size: 12px!important 
+
+p
+    font-size: 16px!important 
+    color: $color-text!important
+    @media (max-width: 991px)
+        &
+            font-size: 14px!important 
+    @media (max-width: 575px)
+        &
+            font-size: 12px!important 
+
+h1
+    font-size: 48px!important
+    font-family: $black
+
+h2
+    font-size: 32px!important
+    font-family: $black
+
+h3
+    font-size: 24px!important
+    font-family: $black
+
+h4
+    font-size: 20px!important
+    font-family: $black
+
+h5
+    font-size: 18px!important
+    font-family: $black
+
+h6
+    font-size: 12px!important
+    font-family: $black
+
+@media (max-width: 1199px)
+    h1
+        font-size: 32px!important
+    h2
+        font-size: 24px!important
+    h3
+        font-size: 20px!important
+    h4
+        font-size: 18px!important
+    h5
+        font-size: 16px!important
+
+@media (max-width: 991px)
+    h1
+        font-size: 24px!important
+    h2
+        font-size: 20px!important
+    h3
+        font-size: 18px!important
+    h4
+        font-size: 16px!important
+    h5
+        font-size: 14px!important
+
+@media (max-width: 767px)
+    h1
+        font-size: 20px!important
+    h2
+        font-size: 18px!important
+    h3
+        font-size: 16px!important
+    h4
+        font-size: 14px!important
+    h5
+        font-size: 12px!important
+
+.navbar
+    background-color:$bg-nav
+    box-shadow: 0px 4px 10px 4px $shadow
+    height: 100px
+    @media (max-width: 991px)
+        &
+            height: auto!important
+    .navbar-toggler
+        padding: $tg-pd-btn
+        border: $dash
+        img
+            width: 20px
+            height: 20px
+        &:focus
+            box-shadow: $shadow-btn
+    .navbar-brand
+        img
+            width: 50px
+            height: 50px
+        h3
+            color: $color-title
+            line-height: 18px
+            margin-left: 18px!important
+    @media (max-width: 991px)
+        .navbar-nav
+            border-top: $dash
+            margin-top: 20px
+            padding: 20px 0px
+
+    .dropdown-menu
+        margin-top: 20px!important
+        border: $dash
+        border-radius: $r-card
+        padding: $tg-pd-btn
+        box-shadow: $shadow-btn
+        a
+            color: $color-text
+            font-size: 16px
+            padding: $pd-dropdown
+            font-family: $bold
+            background-color: transparent
+            transition: .5s ease
+            &:hover
+                color: $color-title
+    .nav-link
+        color: $color-text
+        font-size: 16px
+        padding: $pd-nav
+        font-family: $bold
+        box-shadow: none!important
+        transition: .5s ease
+        &:focus 
+            color: $color-title!important
+        @media (max-width: 1199px)
+            &
+                font-size: 14px!important
+                padding: 0 5px!important
+        @media (max-width: 991px)
+            &
+                font-size: 16px!important
+                padding: 10px 0px!important
+        &:hover
+            color: $hov-nav
+        &.dropdown-toggle::after
+            display: none!important
+    .btn
+        @extend %btn
+        margin-top: 0px
+        padding: $nav-pd-btn
+        margin-left: 10px
+        @media (max-width: 991px)
+                &
+                    margin-top: 10px!important
+                    margin-left: 0px!important
+
+.slider
+    padding-top: 136px
+    background-color: $bg-block
+    .slider-title
+        margin-top: 77px
+        @media (max-width: 767px)
+            &
+                margin-top: 0
+        h3
+            color: $color-text
+            font-family: $light
+            margin-bottom: $mb-slider-title
+            @media (max-width: 767px)
+                &
+                    margin-bottom: $mb-slider-title / 2
+        h1
+            color: $color-text
+            margin-bottom: $mb-slider-title-second
+            @media (max-width: 767px)
+                &
+                    margin-bottom: $mb-slider-title / 2
+        h5
+            color: $color-text
+            font-family: $regular
+            max-width: 461px
+            width: 100%
+    .btn-block .btn
+        @extend %btn
+        margin-left: 0
+        @media (max-width: 767px)
+                &
+                    margin-top: $mt-btn / 2
+                    margin-bottom: $mt-btn
+        @media (max-width: 575px)
+                &
+                    margin-top: $mt-btn / 2
+                    margin-bottom: $mt-btn / 2
+
+    .btn-dash .btn
+        @extend %btn-dash
+        margin-left: 14px
+        @media (max-width: 767px)
+                &
+                    margin-top: $mt-btn / 2
+                    margin-bottom: $mt-btn
+        @media (max-width: 575px)
+            &
+                margin-left: 0px
+                margin-top: $mt-btn * 0
+                margin-bottom: $mt-btn / 2
+    .carousel
+        width: 100%
+        height: 398px     
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover   
+            border-radius: $rad-img
+        .carousel-control-next, .carousel-control-prev
+            opacity: 1!important
+            width: 40px!important
+            height: 40px!important
+            margin: auto 10px!important
+            padding: 10px!important
+            background: #FFFFFF50!important
+            border-radius: $rad-btn
+    .clouds-bottom
+        @extend %cloud-bottom
+            
+.about
+    padding: $pd-block
+    .title-block
+        @extend %title
+    .btn
+        @extend %btn
+    .about-img
+        width: auto
+        height: 100%
+        img
+            width: 100%
+            height: auto
+            @media (max-width: 767px)
+                &
+                    margin-bottom: $mb-slider-title-second
+
+.activities
+    padding-bottom: $pd-block
+    background-color: $bg-block
+    .clouds-top
+        @extend %cloud-top
+    .title-block
+        @extend %title
+        margin-top: $mt-title
+    .card
+        @extend %card
+        h4
+            color: $color-title
+            margin-bottom: $mb-title!important
+        .border-img
+            border: $dash
+            max-width: 179px
+            width: 100%
+            max-height: 164px
+            height: 100%
+            padding: 7px
+            border-radius: $rad-img
+            overflow: hidden!important
+            img
+                width: 100%
+                height: 100%
+                border-radius: $rad-img
+                transition: transform 0.5s
+                rotate: 0deg
+                transition: .5s ease
+                margin-bottom: $mb-card
+        &:hover img
+            rotate: 5deg
+            transform: scale(1.2)
+        .card-body
+            padding: 0!important
+            p
+                margin-top: $mb-card
+            .btn
+                @extend %btn
+                margin-top: 24px
+                margin-left: 0px
+
+.programms
+    padding-top: $pd-block
+    background-color: $bg-block
+    .title-block
+        @extend %title
+        margin-top: $mt-title * 2
+        @media (max-width: 767px)
+                h2 
+                    margin-bottom: 20px
+    .btn-dash .btn
+        @extend %btn-dash
+        padding: $pd-year-btn
+        margin-top: 0
+        margin-left: 14px
+        margin-bottom: $mb-btn
+        @media (max-width: 575px)
+                &
+                    margin-left: 0px
+        &.active
+            @extend %btn
+            padding: $pd-year-btn
+            margin-top: 0
+            margin-left: 14px
+            margin-bottom: $mb-btn
+            &:hover
+                color: $color-btn!important
+            @media (max-width: 767px)
+                    &
+                        margin-top: 0px!important
+                        margin-bottom: $mb-btn
+        
+            @media (max-width: 575px)
+                    &
+                        margin-top: 0!important
+                        margin-bottom: $mb-btn / 2
+            @media (max-width: 767px)
+                    &
+                        margin-top: 0!important
+                        margin-bottom: $mb-btn
+                        padding: $pd-year-btn / 2
+            @media (max-width: 575px)
+                &
+                    margin-left: 0px
+                    margin-top: $mt-btn * 0
+                    margin-bottom: $mb-btn / 2
+    .card
+        @extend %card
+        h4
+            color: $color-title
+            margin-bottom: $mb-card / 2!important
+        p
+            margin-bottom: $mb-card!important
+        .card-body
+            padding: 0
+            img
+                width: auto
+                height: 44px
+            a
+                color: $color-title!important
+    .btn-block .btn
+        @extend %btn
+    .clouds-bottom
+        @extend %cloud-bottom
+
+.price       
+    padding: $pd-block     
+    .title-block
+        @extend %title
+    .card
+        @extend %card
+        background-color: $bg-block
+        transition: .5s ease
+        .price-block
+            padding: 20px 0
+            border-bottom: $dash
+        &:hover
+            background-color: $bg-card-hover
+        h4
+            color: $color-title
+            margin-bottom: $mb-card / 2!important
+        p
+            margin-bottom: 0!important
+        .card-body
+            padding: 0
+            p
+                color: $color-text!important
+                font-family: $black
+                @media (max-width: 575px)
+                    &
+                        margin-top: 20px!important
+
+.advantages       
+    padding: $pd-block  
+    .title-block
+        @extend %title
+    .advantages-img
+        width: 37px
+        height: auto
+        img
+            width: 37px
+            height: auto
+            @media (max-width: 575px)
+                    &
+                        width: (30px / 37px) * 100%
+    .text-advantages
+        margin-left: 26px
+        max-width: 440px
+        width: 100%
+        h4
+            color: $color-title
+            margin-bottom: $mb-card / 2!important
+        p
+            margin-bottom: $mb-card!important
+
+.reviews
+    padding-bottom: $pd-block
+    background-color: $bg-block
+    .clouds-top
+        @extend %cloud-top
+    .title-block
+        @extend %title
+        margin-top: $mt-title
+    .card
+        @extend %card
+        .card-header
+            padding: 0
+            margin-bottom: 0!important
+            h4
+                color: $color-text
+                margin-bottom: $mb-card / 2!important
+            p
+                margin-bottom: 0!important
+                color: $color-title!important
+        .card-body
+            padding: 0
+            p
+                margin-bottom: 20px!important
+
+    .thumbnail
+        padding: 0 12px
+        width: 100% !important
+        max-width: 100%!important
+        height: 100%
+        overflow: auto
+    .owl-carousel 
+        touch-action: none
+        position: relative
+        z-index: 1
+    .owl-carousel .owl-stage
+        display: -webkit-box
+        display: -moz-box
+        display: -ms-box
+        display: box
+    .owl-stage-outer
+        padding: 0
+        overflow: hidden
+    .owl-carousel .owl-item
+        display: flex
+        flex: 0 auto
+        width: 100%
+    .owl-dots button, .owl-prev, .owl-next, .owl-nav
+        display: none!important
+    .owl-dots
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-top: 32px
+    .owl-dots button
+        display: none!important
+
+.news
+    padding-bottom: $pd-block
+    background-color: $bg-block
+    .clouds-bottom
+        @extend %cloud-top
+    .title-block
+        @extend %title
+        margin-top: $mt-title
+    .card
+        @extend %card
+        padding: 0px
+        .card-body
+            width: 100%
+            height: 154px
+            padding: 0px
+            border-radius: 20px 20px 0px 0px
+            overflow: hidden!important
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+                object-position: center
+                border-radius: 20px 20px 0px 0px
+                transition: transform 0.5s
+                transition: .5s ease
+        &:hover img
+            transform: scale(1.2)
+        .card-header
+            padding: $pd-card!important
+            p
+                margin-bottom: 10px!important
+                font-size: 12px!important
+            h4
+                margin-bottom: $mb-card
+                color: $color-text
+            a
+                color: $color-title
+    .btn-block .btn
+        @extend %btn
+    .clouds-bottom
+        @extend %cloud-bottom
+
+.footer
+    padding: $pd-block  
+    .navbar-brand
+        margin-bottom: 35px!important
+        img
+            width: 82px
+            height: 82px
+        h2
+            color: $color-title
+            margin-left: 18px!important
+    .nav-footer
+        margin-top: 50px
+        @media (max-width: 575px)
+            &
+                margin-top: 0px!important
+        .list-group-item a, .list-group-item
+            font-size: 16px!important
+            color: $color-text
+            font-family: $black
+            transition: .5s ease
+            &:hover
+                color: $color-title
+    .icon-block img
+            width: 30px
+            height: auto
+    .icon-block p 
+        margin-bottom: 20px!important
+        color: $color-text
+    .title-block h3
+        margin-bottom: $mb-title
+        color: $color-text
+        @media (max-width: 575px)
+            &
+                margin-top: 30px!important
+    .contact-text h4
+        color: $color-text!important
